@@ -4,7 +4,7 @@ import "./ReservationCard.css"; // Import pliku CSS
 const ReservationCard = () => {
   const [selectedTime, setSelectedTime] = useState(null);
 
-  const times = ["12:15", "12:30", "12:45", "13:00", "13:15", "13:30"];
+  const times = ["12:15", "12:30", "12:45", "13:00", "13:15", "13:35"];
 
   const handleTimeClick = (time) => {
     setSelectedTime(time);
