@@ -1,0 +1,82 @@
+/* Podstawowy styl dla formularza */
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Styl dla nagĹĂłwka formularza */
+form h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Stylowanie dla wszystkich pĂłl formularza */
+input, textarea, button {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Stylizacja pĂłl tekstowych */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* WyrĂłĹźnianie pĂłl w focusie */
+input:focus, textarea:focus, button:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Stylizacja przycisku */
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+/* Efekt hover na przycisku */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Stylizacja dla input typu date, time, i number */
+input[type="date"],
+input[type="time"],
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Stylizacja dla input typu email */
+input[type="email"] {
+  text-transform: lowercase;
+}
+
+/* Stylizacja dla textarea */
+textarea {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Stylowanie etykiet */
+label {
+  font-size: 16px;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}

@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import ReservationForm from './ReservationForm/ReservationForm.jsx'
+import ReservationCard from './ReservationCard/ReservationCard.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <ReservationCard />
+    <ReservationForm />
   </StrictMode>,
 )
