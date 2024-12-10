@@ -43,7 +43,7 @@ async function checkDatabaseSize() {
         console.log(results);
     });
 
-    // Zamknięcie połączenia
+    // Zamknięcie połączenia z bazą danych
     connection.end();
 }
 
