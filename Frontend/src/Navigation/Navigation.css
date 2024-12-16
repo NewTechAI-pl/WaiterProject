@@ -1,0 +1,110 @@
+/* Kontener nawigacji */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #fffaf0, #f4ece2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  border-radius: 0 0 10px 10px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Lista nawigacyjna */
+.navigation-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Element nawigacyjny */
+.navigation-item {
+  position: relative;
+}
+
+/* Linki */
+.navigation-link {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555;
+  padding: 5px 10px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navigation-link:hover {
+  color: #b38b6d;
+  transform: scale(1.1);
+}
+
+/* Język - przycisk */
+.language-button {
+  background: transparent;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #555;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-button:hover {
+  color: #b38b6d;
+  transform: scale(1.1);
+}
+
+/* Menu językowe */
+.language-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fffaf0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  z-index: 20;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Opcje językowe */
+.language-option {
+  background: transparent;
+  border: none;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #555;
+  padding: 10px 20px;
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.language-option:hover,
+.language-option.active {
+  background: #b38b6d;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

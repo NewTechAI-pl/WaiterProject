@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-container {
+    display: flex;
+    height: 100vh; /* Pełna wysokość ekranu */
+  }
+  
+  .main-content {
+    flex: 1; /* Zajmuje całą przestrzeń po lewej stronie */
+    display: flex;
+    flex-direction: column;
+  }
